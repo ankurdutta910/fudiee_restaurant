@@ -1,0 +1,112 @@
+.App {
+  text-align: left;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  color: white;
+
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+
+  border-bottom: 1px solid #444;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar ul li:hover {
+  background-color: #575757;
+}
+
+@media (max-width: 800px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.label {
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+  color: grey;
+  display: block;
+}
+
+.input {
+  width: 100%;
+}
+
+/* ---------- Main-content ----*/
+.main-content {
+  width: 100%;
+  position: relative;
+  right: 0px;
+  margin-left: 0px;
+  background-color: #ededed;
+  height: 100vh;
+  padding: 20px;
+  color: #111;
+}
+
+@media (min-width: 800px) {
+  .main-content {
+    width: calc(100vw - 250px);
+    margin-left: 250px;
+  }
+}
+
+.card-text {
+  margin-top: -6px !important;
+  font-size: 0.9rem !important;
+  color: grey;
+}
+
+.img-div {
+  vertical-align: middle;
+  width: 20%;
+}
+
+.img-div img {
+  width: 100%;
+  height: 85px;
+  object-fit: cover;
+}
+
+.content-div {
+  text-align: left;
+  width: 55%;
+}
+
+.available-div {
+  width: 15%;
+  display: flex;
+  font-size: 0.8rem;
+  align-items: center;
+}
+
+.available-div .checkbox {
+  font-size: 0.8rem !important;
+}
+.available-div .checkbox label {
+  color: red !important;
+}
